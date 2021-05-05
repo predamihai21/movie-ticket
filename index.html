@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie tickets workshop</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="movie-container">
+				<label for="movie">Select a movie:</label>
+				<select id="movie">
+					<option value="10">Rocky ($10)</option>
+					<option value="12">Titanic ($12)</option>
+					<option value="29">Joker ($29)</option>
+					<option value="2">Terminator ($2)</option>
+				</select>
+			</div>
+			<p class="text">Number of tickets: <span id="count">0</span></p>
+			<p class="text">Total price: $ <span id="total">0</span></p>
+
+			<div class="seats-container">
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+			</div>
+			<ul class="legend">
+				<li>
+					<div class="seat"></div>
+					<small>Unoccupied</small>
+				</li>
+				<li>
+					<div class="seat selected"></div>
+					<small>Selected</small>
+				</li>
+				<li>
+					<div class="seat occupied"></div>
+					<small>Occupied</small>
+				</li>
+			</ul>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
